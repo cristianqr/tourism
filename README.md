@@ -106,5 +106,7 @@ And join the Nx community:
 npm install --save @nestjs/typeorm typeorm mysql2 class-transformer
 
 ## Frontend
-npm i --save primeng @primeng/themes @angular/animations
 npm i -D @nx/angular
+npm i --save primeng @primeng/themes @angular/animations
+
+npx nx generate @nx/angular:application --directory=apps/frontend --name=frontend --bundler=esbuild --standalone=true --routing=true --backendProject=api --skipTests=true --style=scss --addTailwind=true --linter=eslint --no-interactive
