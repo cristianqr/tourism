@@ -1,0 +1,7 @@
+<div class="flex justify-center mt-10">
+    <form [formGroup]="form" (ngSubmit)="login()" class="flex flex-col gap-2">
+        <input type="text" pInputText placeholder="Username" formControlName="username" class="flex-1" />
+        <input type="password" pInputText placeholder="Password" formControlName="password" class="flex-1" />
+        <button pButton type="submit" class="w-full">Login</button>
+    </form>
+</div>

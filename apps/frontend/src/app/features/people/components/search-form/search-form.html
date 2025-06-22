@@ -1,0 +1,4 @@
+<form [formGroup]="form" (ngSubmit)="searchOn()" class="flex gap-2">
+    <input pInputText placeholder="Person name" formControlName="fullName" />
+    <button type="submit" pButton>Search</button>
+</form>

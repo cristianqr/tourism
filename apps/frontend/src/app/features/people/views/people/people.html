@@ -1,0 +1,8 @@
+<div class="flex justify-between">
+    <app-search-form (search)="search($event)"></app-search-form>
+    <div>
+        <button pButton type="button" routerLink="/people/new">New person</button>
+    </div>
+</div>
+
+<app-people-list [people]="people"></app-people-list>
