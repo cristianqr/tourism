@@ -3,8 +3,7 @@ import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
 import { PersonEntity } from "./person.entity";
-import { PersonDto } from "./person.dto";
-
+import { PersonDto } from "@tourism/shared";
 
 @Injectable()
 export class PeopleRepository {

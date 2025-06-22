@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PeopleRepository } from "./people.repository";
-import { PersonDto } from "./person.dto";
+import { PersonDto } from "@tourism/shared";
 
 @Injectable()
 export class PeopleService {
