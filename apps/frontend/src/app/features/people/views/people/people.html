@@ -1,8 +1,10 @@
 <div class="flex justify-between">
     <app-search-form (search)="search($event)"></app-search-form>
     <div>
-        <button pButton type="button" routerLink="/people/new">New person</button>
+        <button pButton type="button" (click)="showModal()">New person</button>
     </div>
 </div>
 
-<app-people-list [people]="people"></app-people-list>
+<app-people-list [people]="people" class="mt-4"></app-people-list>
+
+<app-new-person *ngIf="displayModal"></app-new-person>

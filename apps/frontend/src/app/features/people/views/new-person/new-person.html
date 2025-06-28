@@ -1,1 +1,14 @@
-<button pButton type="button" routerLink="/people">Back</button>
+<p-dialog 
+    header="New Person" 
+    [visible]="true"
+    [modal]="true" 
+    [style]="{width: '50vw', height: '100vh', margin: '0', top: '0', right: '0'}" 
+    [draggable]="false" 
+    [resizable]="false"
+    position="right">
+    <p>Aquí irá el formulario para crear una nueva persona.</p>
+    <ng-template pTemplate="footer">
+        <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text"></button>
+        <button pButton pRipple label="Save" icon="pi pi-check" class="p-button-text"></button>
+    </ng-template>
+</p-dialog>
